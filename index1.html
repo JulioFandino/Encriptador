@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina chida</title>
+    <link rel="stylesheet" href="reset.css"> 
+    <link rel="stylesheet" href="style1.css">
+    
+
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <h1 id="titulo"><img src="imagenes/64977466.png" class="imagen">Encriptador Alura LATAM</h1>
+        </div>
+    </header>
+    <main>
+        <section class="text-box">
+           <div class="text-boxes">
+                <textarea name="input-box" placeholder="Ingrese el texto" class="textarea" id="input-box"></textarea>
+            </div>
+            <div class="text-boxes">
+                <textarea name="output-box" class="textarea" id="output-box" readonly ></textarea>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="botones-footer">
+            <div class="aviso">
+                <p>No se permiten carácteres especiales, mayúsculas ni acentos</p>
+            </div>
+            <div class="botones-box">
+                <button onclick="Encriptar()" class="focus-boton" id="encriptar">Encriptar</button>
+                <button onclick="Desencriptar()" class="focus-boton" id="desencriptar">Desencriptar</button>
+                <button onclick="Copiar('output-box')" class="focus-boton" id="copiar">Copiar texto</button>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="app1.js"></script>
+</html>
